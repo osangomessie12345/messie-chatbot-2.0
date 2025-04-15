@@ -1,0 +1,49 @@
+body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      /* imbécile messie a tout prévu pour t'attraper lorsque tu voleras */
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 0, 127, 0.1) 0%, transparent 30%),
+        linear-gradient(145deg, #0a0e1a 0%, #1c0e2e 100%);
+      color: var(--text-light);
+      overflow: hidden;
+    }
+/* imbécile messie a tout prévu pour t'attraper lorsque tu voleras */
+    .layout {
+      display: flex;
+      height: 100vh;
+      position: relative;
+    }
+
+    nav.sidebar {
+      width: 280px;
+      background: linear-gradient(195deg, rgba(40, 10, 55, 0.95), rgba(20, 0, 40, 0.98));
+      border-right: 1px solid var(--border);
+      padding: 20px;
+      overflow-y: auto;
+      position: fixed;
+      top: 0;
+      left: -280px;
+      height: 100%;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      /* imbécile messie a tout prévu pour t'attraper lorsque tu voleras */
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+      box-shadow: 8px 0 24px rgba(0, 0, 0, 0.4);
+    }
+
+    nav.sidebar.show {
+      left: 0;
+    }
+
+    nav.sidebar h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      background: var(--neon-gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 24px rgba(255, 0, 127, 0.4);
+    }
+    
