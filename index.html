@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- messie a tout prévu imbécile-->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- messie osango-->
+  <title>Chatbot Messie</title>
+  
+    <link href="style.css" rel="stylesheet">
+   <link href="messie.css" rel="stylesheet">
+   <link href="gojo.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+     <link href="anime.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+
+
+    
+    
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <nav id="satoru" class="sidebar">
+      <h2>Historique</h2>
+            <button id="clearHistoryBtn" class="btn">Supprimer l'historique</button>
+            <br>
+         <br>
+      <div id="historyList"></div>
+
+    </nav>
+
+    <i id="jinwoo" class='bx bx-menu'></i>
+    <div class="chat-wrapper">
+      <div class="chat-header">
+        <h1 style="text-align:center">Messie chatbot</h1>
+      </div>
+      <div class="chat-container" id="chatMessages"></div>
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="Écris ton message ici..." />
+        <button class="btn" onclick="sendMessage()">Envoyer</button>
+      </div>
+    </div>
+   
+  </div>
+
+  <script src="script.js">
+
+</script> 
+<script src="question.js"></script>
+<script src="save.js"></script>
+<script src="jin.js"></script>
+<script src="liste.js"></script>
+</body>
+</html>    
