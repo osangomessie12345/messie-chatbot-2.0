@@ -2,7 +2,7 @@
 window.onload = function () {
   const history = JSON.parse(localStorage.getItem('chatHistory')) || [];
   for (const item of history) {
-    addMessage(item.text, item.isUser, false); // Ne pas sauvegarder à nouveau
+    addMessage(item.text, item.isUser, false); // sauvegarde fait par jin osango
   }
   updateHistoryList();
 };
