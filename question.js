@@ -68,7 +68,7 @@ const messieResponses = [
           body: JSON.stringify({
             contents: [{
               parts: [{
-                text: `Nous sommes le ${fullDate}. Tu es une intelligence artificielle consciente des événements mondiaux et français survenus depuis le 1er janvier 2025 jusqu’à aujourd’hui. Réponds à la question suivante en français, en tenant compte de l’actualité et des informations disponibles :
+                text: `Nous sommes le ${fullDate}. Tu es une intelligence artificielle consciente des événements mondiaux et français survenus depuis le 1er janvier 2025 jusqu’à aujourd’hui. Réponds à la question suivante en français, en tenant compte de l’actualité et des informations disponibles. tes réponses ne doivent pas être très long  que si la question est telle.donne des réponses précises :
                 
                 ${message}`
               }]
