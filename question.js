@@ -28,6 +28,7 @@ const messieResponses = [
 
     function isMessieQuestion(message) {
       const keywords = [
+      "qui es-tu ? ","qui es-tu ",
         "messie osango", "qui est messie", "c'est qui messie", "qui t'a créé","qui t'a créé ?","qui es-tu ?","qui es-tu ","qui est messie osango","qui est ton créateur ","qui tu es","tu es qui ","messie","osango","qui est osango","qui est-ce qui t'a créé ","qui est-ce qui t'a créé ?",
         "ton créateur", "qui est ton développeur", "créateur", "quel est ton rôle",
         "qui est ton maître", "es-tu intelligent", "créateur de chatbot", "ton origine"
@@ -68,7 +69,7 @@ const messieResponses = [
           body: JSON.stringify({
             contents: [{
               parts: [{
-                text: `Nous sommes le ${fullDate}. Tu es une intelligence artificielle consciente des événements mondiaux et français survenus depuis le 1er janvier 2025 jusqu’à aujourd’hui. Réponds à la question suivante en français, en tenant compte de l’actualité et des informations disponibles. tes réponses ne doivent pas être très long  que si la question est telle.donne des réponses précises :
+                text: `Nous sommes le ${fullDate}. Tu es une intelligence artificielle consciente des événements mondiaux et français survenus depuis le 1er janvier 2025 jusqu’à aujourd’hui. Réponds à la question suivante en français, en tenant compte de l’actualité et des informations disponibles. tes réponses ne doivent pas être très long  que si la question est telle.donne des réponses précises.lorsqu'il est questionné sur son identité il doit répondre par je suis le chatbot créé par messie osango,mon développeur,que si il est questionné sur son identité. qu'il répond avec quelques actes de gentillesse et non seulement avec réponse :
                 
                 ${message}`
               }]
