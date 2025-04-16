@@ -37,7 +37,7 @@
       100% { left: 100%; }
     }
     #chatMessages {
-      height: 395px;
+      height: 410px;
       padding: 20px;
       overflow-y: auto;
       display: flex;
