@@ -28,7 +28,7 @@ const messieResponses = [
 
     function isMessieQuestion(message) {
       const keywords = [
-        "messie osango", "qui est messie", "c'est qui messie", "qui t'a créé",
+        "messie osango", "qui est messie", "c'est qui messie", "qui t'a créé","qui t'a créé ?","qui es-tu ?","qui es-tu ","qui est messie osango","qui est ton créateur ","qui tu es","tu es qui ","messie","osango","qui est osango","qui est-ce qui t'a créé ","qui est-ce qui t'a créé ?",
         "ton créateur", "qui est ton développeur", "créateur", "quel est ton rôle",
         "qui est ton maître", "es-tu intelligent", "créateur de chatbot", "ton origine"
       ];
@@ -79,11 +79,11 @@ const messieResponses = [
         const data = await response.json();
         thinking.remove();
 
-        const output = data.candidates?.[0]?.content?.parts?.[0]?.text || "Désolé, je n'ai pas pu obtenir de réponse.";
+        const output = data.candidates?.[0]?.content?.parts?.[0]?.text || "Désolé, je n'ai pas pu obtenir de réponse,contactez mon créateur et maître en cas de problème me concernant !";
         addMessage(output, false);
       } catch (error) {
         thinking.remove();
-        addMessage("⚠️ Erreur de connexion à l'API", false);
+        addMessage(" Erreur de connexion à l'API, veuillez réessayer plus tard !", false);
       }
     }
 
