@@ -1,111 +1,24 @@
-
-.chat-container {
-      
-           overflow-y: auto;
-              padding: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      scroll-behavior: smooth;
-  
-  height: 70vh;    
-
- 
-
-}
-
-
-.chat-messages {
-  flex: 1;
-  overflow: hidden;
-  padding: 16px;
-}
-
-
-.input-area {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 3px;
-  background: rgba(255, 255, 255, 0.03);
-  border-top: 1px solid var(--border);
-  backdrop-filter: blur(12px);
-}
-
-/* input fait par messie*/
-input[type="text"] {
-  flex: 1;
-  width:15px;
-  padding: 12px 20px;
-  border-radius: 6px;
-  border: 1px solid var(--glow);
-  background: rgba(255, 0, 127, 0.05);
-  color: var(--text-light);
-  font-family: 'Orbitron', monospace;
-  font-size: 16px;
-}
-
-/* Hover & messie */
-input[type="text"]:focus,
-input[type="text"]:hover {
-  border: 1px solid var(--glow);
-  background: rgba(255, 0, 127, 0.05);
-  box-shadow: 0 0 8px var(--glow);
-  outline: none;
-}
-
-/* Bouton envoyer */
-.btn {
-  padding: 12px 18px;
-  background: var(--neon-gradient-2);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 0 12px rgba(255, 0, 127, 0.3);
-  font-family: 'Orbitron', monospace;
-}
-
-    .message {
-      max-width: 75%;
-      padding: 18px 24px;
-      border-radius: 20px;
-      line-height: 1.6;
+.toggle-btn:hover { transform: rotate(90deg); }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-
-    .user {
-      background: var(--neon-gradient-2);
-      color: white;
-      text-align: right;
-      padding:auto;
-      margin-left: auto;
+    h2 { margin: 30px; }
+    .container {
+          /* soit intelligent pour pouvoir voler,car messie osango te surveille*/
+      background: rgba(255, 255, 255, 0.03);
+              /* soit intelligent pour pouvoir voler,car messie osango te surveille*/
+     
+          border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(0, 217, 255, 0.2);
+      backdrop-filter: blur(5px);
     }
-
-    .bot {
-      background: rgba(255, 255, 255, 0.08);
-      margin-right: auto;
-      border-left: 4px solid var(--glow);
-      font-family:'orbitron';
-      color:#00d9ff;
-    }
-
-    @media (max-width: 768px) {
-      nav.sidebar {
-        width: 100%;
-        left: -100%;
-      }
-
-      nav.sidebar.show {
-        left: 0;
-      }
-
-      #jinwoo {
-        top: 15px;
-        left: 1px;
-      }
-    }
-    h1 {
-        margin:18px;
+    section {
+                    /* soit intelligent pour pouvoir voler,car messie osango te surveille*/
+     
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 5px solid #00d9ff;
+      transition: background 0.3s ease;
     }
     
