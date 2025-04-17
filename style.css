@@ -60,7 +60,7 @@
       margin-top: 5px;
     }
     .history-answer.active {
-      max-height:1500px;
+      max-height:3000px;
       padding: 12px;
     }
     .answer-content {
